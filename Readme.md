@@ -1,4 +1,4 @@
-# Screen Shots
+# Screenshots
 
 ![image](https://github.com/user-attachments/assets/56c54b80-1303-46aa-b0f5-4859a8ad6593)
 ![image](https://github.com/user-attachments/assets/454684f6-cbe0-49c6-824b-22f4db48bb41)
