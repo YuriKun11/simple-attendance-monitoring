@@ -1,3 +1,13 @@
+# Screen Shots
+
+![image](https://github.com/user-attachments/assets/56c54b80-1303-46aa-b0f5-4859a8ad6593)
+![image](https://github.com/user-attachments/assets/454684f6-cbe0-49c6-824b-22f4db48bb41)
+![image](https://github.com/user-attachments/assets/4432cb6a-fbae-446d-a7ee-e5a8adfb9698)
+![image](https://github.com/user-attachments/assets/57ea7354-109b-4d59-964a-2055e4205901)
+![image](https://github.com/user-attachments/assets/4542d4bc-6b26-4e5b-9ed9-8299e38602cc)
+
+
+
 # Project Setup Guide for Web Application
 
 ## Creating the Database
