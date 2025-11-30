@@ -1,0 +1,323 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+/* --- Global Styles & Variables --- */
+:root {
+    /* TouRide Primary Blue */
+    --touride-blue: #1e63ff; 
+    
+    /* Grayscale Palette */
+    --gray-100: #f3f4f6;
+    --gray-200: #e5e7eb;
+    --gray-300: #d1d5db;
+    --gray-500: #6b7280;
+    --gray-600: #4b5563;
+    --gray-700: #374151;
+    --gray-800: #1f2937;
+    --off-white: #f8fafc;
+    
+    /* Message Colors */
+    --red-100: #fee2e2;
+    --red-700: #b91c1c;
+    --green-100: #d1fae5;
+    --green-700: #047857;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--off-white); 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 89vh;
+    padding: 1rem;
+    margin: 0;
+}
+
+.auth-container {
+    width: 100%;
+    max-width: 28rem;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 1.5rem;
+    /* shadow-2xl: Custom shadow definition */
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+/* --- Typography and Header --- */
+.touride-blue {
+    color: var(--touride-blue);
+}
+
+.text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+
+.font-bold {
+    font-weight: 700;
+}
+
+.font-semibold {
+    font-weight: 600;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.header-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    height: 2rem;
+    width: auto;
+}
+
+.header-title {
+    color: var(--gray-800);
+    margin-bottom: 2rem;
+}
+
+.text-sm {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+}
+
+/* --- Message Box Styles (for PHP output) --- */
+.message {
+    padding: 1rem; 
+    margin-bottom: 1rem; 
+    text-align: center;
+    border-radius: 0.75rem; 
+    border-width: 2px; 
+}
+.message.success {
+    background-color: var(--green-100);
+    color: var(--green-700);
+    border-color: #a7f3d0;
+}
+.message.error {
+    background-color: var(--red-100);
+    color: var(--red-700);
+    border-color: #fca5a5; 
+}
+
+/* --- Form Elements --- */
+.input-group {
+    margin-bottom: 1rem; 
+}
+
+.input-label {
+    display: block;
+    margin-bottom: 0.25rem; 
+    font-weight: 500;
+    color: var(--gray-700);
+}
+
+.input-wrapper {
+    position: relative;
+}
+
+.input-field {
+    width: 85%;
+    padding: 1rem 1rem 1rem 3rem; 
+    color: var(--gray-800);
+    background-color: var(--gray-100);
+    border: 1px solid var(--gray-200);
+    border-radius: 0.75rem; 
+    transition: all 0.2s ease-in-out; 
+    outline: none;
+}
+
+#reg-password {
+    width: 78% !important;
+}
+
+#login-password{
+    width: 78% !important;
+}
+
+/* Focus Ring (focus:ring-2 focus:ring-touride-blue) */
+.input-field:focus {
+    border-color: var(--touride-blue);
+    box-shadow: 0 0 0 2px var(--touride-blue); 
+}
+
+/* Corrected right padding for password field to accommodate the toggle button */
+.password-input {
+    padding-right: 3rem;
+}
+
+.input-icon {
+    position: absolute;
+    left: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 1.25rem;
+    height: 1.25rem;
+    color: var(--gray-500);
+    pointer-events: none;
+}
+
+.password-toggle-btn {
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 1.25rem;
+    height: 1.25rem;
+    color: var(--gray-500);
+    cursor: pointer;
+    border: none;
+    background: none;
+    padding: 0;
+    transition: color 0.2s;
+    z-index: 10;
+}
+
+.password-toggle-btn:hover {
+    color: var(--gray-700);
+}
+
+/* --- Checkbox and Link --- */
+.flex-row-between {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+    font-size: 0.875rem;
+}
+
+.remember-me-label {
+    display: flex;
+    align-items: center;
+    color: var(--gray-600);
+}
+
+/* Custom Checkbox Styling */
+.form-checkbox {
+    appearance: none;
+    width: 1em;
+    height: 1em;
+    border: 1px solid var(--gray-300);
+    border-radius: 0.25rem; 
+    margin-right: 0.5rem;
+    cursor: pointer;
+    position: relative;
+    outline: none;
+}
+
+.form-checkbox:checked {
+    background-color: var(--touride-blue);
+    border-color: var(--touride-blue);
+}
+
+.form-checkbox:checked::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    width: 4px;
+    height: 8px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+}
+
+.forgot-password-link {
+    font-weight: 500;
+    transition: text-decoration 0.2s;
+}
+
+.forgot-password-link:hover {
+    text-decoration: underline;
+}
+
+/* --- Button --- */
+.btn-primary {
+    width: 100%;
+    background-color: var(--touride-blue);
+    color: white;
+    padding: 0.75rem 1rem;
+    border-radius: 0.75rem;
+    font-weight: 600;
+    /* shadow-lg based on Tailwind's blue shadow */
+    box-shadow: 0 10px 15px -3px rgba(30, 99, 255, 0.3), 0 4px 6px -2px rgba(30, 99, 255, 0.1); 
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s; 
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+
+.btn-primary:hover {
+    background-color: #1a56cc;
+    transform: scale(1.01);
+}
+
+/* Focus Ring (focus:ring-4 focus:ring-touride-blue focus:ring-opacity-50) */
+.btn-primary:focus {
+    box-shadow: 0 0 0 4px rgba(30, 99, 255, 0.5); 
+}
+
+/* --- Form Toggle Link --- */
+.toggle-section {
+    text-align: center;
+    margin-top: 1.5rem;
+    font-size: 0.875rem;
+}
+
+.toggle-link {
+    font-weight: 500;
+    margin-left: 0.25rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    text-align: left;
+}
+
+.toggle-link:hover {
+    text-decoration: underline;
+}
+
+/* --- Utility Classes for JS/PHP (should be kept) --- */
+.hidden {
+    display: none !important;
+}
+.block {
+    display: block !important;
+}
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
+
+/* ERROR MESSAGE */
+.error-message {
+    background-color: #fee2e2; 
+    color: #dc2626; 
+    padding: 10px;
+    margin-bottom: 1rem;
+    border: 1px solid #f87171;
+    border-radius: 4px;
+    text-align: center;
+}
+.success-message {
+    background-color: #d1fae5; 
+    color: #059669; 
+    padding: 10px;
+    margin-bottom: 1rem;
+    border: 1px solid #34d399;
+    border-radius: 4px;
+    text-align: center;
+}

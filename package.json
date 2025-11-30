@@ -1,0 +1,16 @@
+{
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.16",
+    "tailwindcss": "^4.1.16"
+  },
+  "name": "touride",
+  "version": "1.0.0",
+  "description": "![image](https://github.com/user-attachments/assets/56c54b80-1303-46aa-b0f5-4859a8ad6593)\r ![image](https://github.com/user-attachments/assets/454684f6-cbe0-49c6-824b-22f4db48bb41)\r ![image](https://github.com/user-attachments/assets/4432cb6a-fbae-446d-a7ee-e5a8adfb9698)\r ![image](https://github.com/user-attachments/assets/57ea7354-109b-4d59-964a-2055e4205901)\r ![image](https://github.com/user-attachments/assets/4542d4bc-6b26-4e5b-9ed9-8299e38602cc)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

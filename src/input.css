@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+@layer utilities {
+  .bg-primary-blue {
+    background-color: #2563EB;
+  }
+  .bg-primary-dark {
+    background-color: #0f172a;
+  }
+  .hover\:bg-primary-dark:hover {
+    background-color: #0f172a;
+  }
+}

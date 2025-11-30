@@ -1,0 +1,98 @@
+/* colors.css */
+
+/* Blue primary */
+.text-blue-600 {
+    color: #2563eb !important;
+    transition: color 0.3s ease;
+}
+
+.bg-blue-50 {
+    background-color: #ebf2ff !important;
+    transition: background-color 0.3s ease;
+}
+
+.bg-blue-600 {
+    background-color: #2563eb !important;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.bg-blue-700 {
+    background-color: #1d4ed8 !important;
+}
+
+.border-blue-200 {
+    border-color: #93c5fd !important;
+}
+
+.text-blue-800 {
+    color: #1e40af !important;
+}
+
+.text-green-800 {
+    color: #166534 !important;
+}
+
+.bg-green-50 {
+    background-color: #f0fdf4 !important;
+}
+
+.border-green-200 {
+    border-color: #bbf7d0 !important;
+}
+
+/* Button hover and active */
+.btn-color {
+    transition: all 0.3s ease;
+}
+
+.btn-color:hover {
+    background-color: #1d4ed8;
+    box-shadow: 0 5px 15px rgba(37, 99, 235, 0.4);
+    transform: translateY(-2px);
+}
+
+/* Nav links */
+nav a {
+    transition: all 0.3s ease;
+    border-radius: 0.5rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 100px;
+    text-align: center;
+    white-space: nowrap;
+}
+
+nav a:hover {
+    background-color: #2563eb;
+    color: #ffffff;
+    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
+    transform: translateY(-1px);
+}
+
+nav a.active {
+    background-color: #2563eb;
+    color: #ffffff;
+    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
+}
+
+nav {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+.bg-blue-50, .bg-green-50 {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.bg-blue-50:hover, .bg-green-50:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.05);
+}
+
+.mr-3{
+    margin-right: 5px;
+}
+.ml-3{
+    margin-left: 5px;
+}

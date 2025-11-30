@@ -1,12 +1,5 @@
 # Screenshots
-
-![image](https://github.com/user-attachments/assets/56c54b80-1303-46aa-b0f5-4859a8ad6593)
-![image](https://github.com/user-attachments/assets/454684f6-cbe0-49c6-824b-22f4db48bb41)
-![image](https://github.com/user-attachments/assets/4432cb6a-fbae-446d-a7ee-e5a8adfb9698)
-![image](https://github.com/user-attachments/assets/57ea7354-109b-4d59-964a-2055e4205901)
-![image](https://github.com/user-attachments/assets/4542d4bc-6b26-4e5b-9ed9-8299e38602cc)
-
-
+N/A
 
 # Project Setup Guide for Web Application
 
@@ -24,8 +17,8 @@ Follow these steps to create and import the database using phpMyAdmin:
 3. **Import the Database SQL File**:
    - Select the newly created database.
    - Click on the “Import” tab.
-   - Click “Browse” and locate the `attendance_system.sql` file in the `src/database` folder.
-   - Select the `attendance_system.sql` file and click “Open” in the system dialog.
+   - Click “Browse” and locate the `touride.sql` file in the `src/database` folder.
+   - Select the `touride.sql` file and click “Open” in the system dialog.
    - Click “Go” to start the import process.
 
 ## Enabling the `mod_rewrite` Module
